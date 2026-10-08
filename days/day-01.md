@@ -78,6 +78,7 @@ In this model, the IT department spends a vast majority of its time simply "keep
 In contrast, if **Company B** decides to implement **Oracle Fusion Cloud**, they adopt the SaaS model. The burden of infrastructure shifts entirely to the vendor (Oracle). 
 - **Operational Expenditure (OpEx):** Instead of buying servers and licenses, Company B purchases a flexible **subscription** (pay-as-you-go).
 - **Zero Infrastructure:** There is no hardware to buy, no operating systems to install, and no databases to manually configure. Oracle hosts the application on Oracle Cloud Infrastructure (OCI).
+- **Global Availability & Performance:** As part of the subscription, Oracle provisions Virtual Machines (VMs) across multiple global data center regions. Based on the user's location, requests are automatically routed to the optimal region, ensuring fast response times (low latency) and seamless, high-speed accessibility.
 - **Automated Maintenance:** Oracle handles all database management, server maintenance, performance tuning, and automated backups behind the scenes. 
 - **Continuous Innovation:** Oracle automatically pushes quarterly updates and security patches. Company B always has access to the latest features (like built-in AI and machine learning) without the pain of manual upgrades.
 - **Shift in IT Focus:** Since the need for a traditional Apps DBA and infrastructure team is eliminated, Company B's IT staff can focus on strategic tasks—such as business process optimization, data analytics, and system integrations.
