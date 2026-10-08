@@ -55,6 +55,11 @@ Typically, a standard Oracle SaaS subscription provides a company with at least 
 
 *Note: While 2 instances (Test and Prod) are standard, a company can request more than 2 instances from Oracle (for example, a dedicated DEV instance, a separate UAT instance, or a Training instance). However, **extra instances cost extra money** as they require Oracle to allocate more computing resources.*
 
+### The "Vision" Instance (Demo Environment)
+In addition to standard empty environments, Oracle also provides access to a **Vision Instance**. 
+- A Vision instance is a special demo environment that comes pre-configured with thousands of rows of "dummy" data (imaginary companies, employees, invoices, and setups). 
+- Consultants heavily use the Vision instance to explore features, run standard processes out-of-the-box, troubleshoot issues by comparing setups, or show product demos to clients without having to configure a brand-new system from scratch.
+
 ## 4. Managing Instances: Cloning and Patching
 
 Because you are operating in a SaaS cloud environment, managing these instances follows strict Oracle protocols. Two critical concepts you must know are **P2T Clones** and **Patching Cadence**.
