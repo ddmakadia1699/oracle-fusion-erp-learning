@@ -96,3 +96,30 @@ Here is the exact step-by-step technical handshake:
 4. **Customer Return / Sales Returns (Sales ➔ Inventory):**
    - What happens if the laptops reach the customer's warehouse, but 5 of them have shattered screens? 
    - The customer will send them back. The Sales department will create an **RMA (Return Material Authorization)** to log a "Sales Return". When the delivery truck brings them back, the Inventory department receives them into a specific subinventory (like *Subinv 3: Returns*) so they aren't accidentally sold to someone else.
+
+---
+
+## 5. The Financial Flow (Getting Paid!)
+Once the laptops are shipped (Ship Confirm), the physical warehouse job is done. Now, the financial departments take over to make sure the company actually gets paid.
+
+### Step 3: Receivables Department (AR)
+- **Sales Invoice:** Triggered automatically by the Ship Confirm, the Accounts Receivable (AR) team generates the Sales Invoice and sends it to the customer. 
+- **Receipt:** When the customer pays (e.g., they send a check or wire transfer for the 100 laptops), the AR team logs this in the system as a **Receipt**. *(Note: In AR, a "Receipt" means receiving money, whereas in Inventory, a "Receipt/GRN" means receiving physical goods).*
+
+### Step 4: Cash Management Department (CE / CM)
+- **Bank Accounts:** Just like in the P2P cycle, the Cash Department manages the actual, physical bank accounts.
+- **Bank Statement Reconciliation:** The Cash team downloads the daily electronic Bank Statement and matches the real-world bank data against the "Receipts" logged by the AR team. 
+
+> **Example Issue: Unreconciled Receipts**
+> **The Problem:** The Receivables (AR) system shows **20 Receipts** logged today by the AR clerks. However, when the Cash team downloads the Bank Statement, it only shows **10 Receipts** actually clearing the bank account. 
+> 
+> **Why did this happen? (The Issue):** 
+> 1. *Timing Delays (Float):* The customer mailed a check, the AR clerk logged the Receipt today, but the bank won't actually clear the funds for another 3 days.
+> 2. *Data Mismatch:* The bank statement transaction number or date doesn't match the system receipt perfectly, so the Oracle Auto-Reconciliation engine skipped it.
+> 
+> **How to fix it (The Solution):**
+> The Cash team must perform a **Manual Reconciliation**. They navigate to *Cash Management > Bank Statements and Reconciliation > Manual Reconciliation*. From there, they manually find the 10 missing system receipts and force-match them to the bank line. If the bank genuinely rejected the payments, AR must reverse the receipt and contact the customer.
+
+### Step 5: Common Department (General Ledger - GL)
+- Just like the buying cycle, the selling cycle ends in the **General Ledger**. 
+- The GL team takes the revenue data from AR and the cash data from CM to generate the final **Profit & Loss (P&L)** reports for the management team.
