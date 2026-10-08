@@ -106,7 +106,14 @@ To actually create this user in a brand-new system, you must follow these exact 
    - **User Name:** fusion user 1
    - **Password:** Abcd@1233
    - **Confirm Password:** Abcd@1233
-6. **Add Roles:** Scroll down to the Roles section and click the **`Add Role`** button. Search for and add the following two roles one by one:
+6. **Add Roles:** Scroll down to the Roles section and click the **`Add Role`** button. Search for and add the following roles one by one:
    - `Application Implementation Consultant`
    - `IT Security Manager`
+   - *(Optional but recommended)* `Employee` - This abstract role is often added so the dummy user can run scheduled processes (ESS jobs) and access standard self-service pages.
 7. **Save:** Click **Save and Close**.
+
+### 🏆 Expert Best Practices for Implementation Users
+If you want to manage security like a pro (and write a great book), keep these industry-standard best practices in mind:
+- **Do Not Link to an HCM Person Record:** Implementation users should **never** be linked to a real worker/employee record in the HCM (HR) module. Creating them directly in the Security Console (as shown above) ensures they remain separate system accounts and don't pollute your HR data.
+- **The "God Mode" Audit Risk:** The `Application Implementation Consultant` role has unrestricted access to almost all company data. During a project, this is necessary. However, after the system goes "Live", IT Auditors will flag anyone who still has this role. It should be removed from all users once the project is finished.
+- **Segregation of Duties (SoD):** Eventually, you should separate these powers. One user (or team) should have the Setup/Configuration roles, while a completely different user (or team) has the `IT Security Manager` role to assign access. This prevents a single person from both configuring the financial system and secretly granting themselves access to approve their own fake invoices!
