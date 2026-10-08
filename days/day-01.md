@@ -93,6 +93,26 @@ In contrast, if **Company B** decides to implement **Oracle Fusion Cloud**, they
 | **Upgrades** | Manual, expensive, requires downtime | Automatic, seamless, continuous (Quarterly) |
 | **Scalability** | Slow (requires buying new hardware) | Instant and elastic |
 
+### 6. Core Concepts of Cloud Computing
+
+To fully master the concept of Oracle Fusion Cloud, it is critical to understand the foundational principles of modern cloud computing:
+
+#### 1. Software as a Service (SaaS)
+SaaS is the delivery model where a provider (like Oracle) hosts fully functional applications and delivers them over the internet. You do not install anything; you simply log in through a web browser. It relies on a **pay-as-you-go** subscription model, completely eliminating massive upfront capital expenditures (CapEx) for hardware and software. 
+
+#### 2. Elasticity (Automation of Scalability)
+Elasticity is the ability of the cloud infrastructure to dynamically and automatically expand or shrink resources (like CPU, memory, and storage) in real-time based on demand. For example, during month-end financial closing when system traffic spikes, Oracle Cloud automatically provisions more computing power so the system doesn't slow down, and then de-provisions it when the peak is over.
+
+#### 3. Disaster Recovery (DR) and High Availability
+In a traditional On-Premise setup, disaster recovery is terrifying and expensive—requiring manual backups and secondary physical servers off-site. In the cloud, disaster recovery is largely automated. Data is continuously replicated across multiple global data center regions. If one data center experiences a massive power failure, traffic seamlessly fails over to another data center with near-zero data loss and minimal downtime.
+
+#### 4. The Shared Responsibility Model
+This is a critical framework defining who is responsible for what:
+- **Oracle (The Provider) is responsible for the "Security OF the Cloud":** They secure the physical data centers, host hardware, operating systems, networking, and the underlying database architecture.
+- **You (The Customer) are responsible for the "Security IN the Cloud":** You must manage who gets access to the system (user roles, passwords, multi-factor authentication), how you configure the business workflows, and the accuracy of the data you enter into the system.
+
+In a SaaS environment like Oracle Fusion, Oracle handles roughly 80-90% of the technical security and maintenance burden.
+
 ## Key terms
 - **ERP**: Enterprise Resource Planning, software that runs a company's main business processes in one system.
 - **Module**: one functional area of an application, for example AP.
