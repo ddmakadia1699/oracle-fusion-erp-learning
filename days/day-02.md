@@ -133,3 +133,24 @@ If you want to manage security like a pro (and write a great book), keep these i
 - **Do Not Link to an HCM Person Record:** Implementation users should **never** be linked to a real worker/employee record in the HCM (HR) module. Creating them directly in the Security Console (as shown above) ensures they remain separate system accounts and don't pollute your HR data.
 - **The "God Mode" Audit Risk:** The `Application Implementation Consultant` role has unrestricted access to almost all company data. During a project, this is necessary. However, after the system goes "Live", IT Auditors will flag anyone who still has this role. It should be removed from all users once the project is finished.
 - **Segregation of Duties (SoD):** Eventually, you should separate these powers. One user (or team) should have the Setup/Configuration roles, while a completely different user (or team) has the `IT Security Manager` role to assign access. This prevents a single person from both configuring the financial system and secretly granting themselves access to approve their own fake invoices!
+
+## 6. How to Check Your Oracle Fusion Version
+Because Oracle pushes mandatory auto-upgrades every quarter, it is crucial to know exactly which version your instance is currently running. This helps when reading Oracle's "What's New" release notes or when logging support tickets with Oracle.
+
+### Decoding the Version Format
+Oracle uses a very simple naming convention for its quarterly releases. It combines the **Year** with a **Quarter Letter**:
+- **A** = Quarter 1 (Jan / Feb / Mar)
+- **B** = Quarter 2 (Apr / May / Jun)
+- **C** = Quarter 3 (Jul / Aug / Sep)
+- **D** = Quarter 4 (Oct / Nov / Dec)
+
+**Examples:**
+- `23D` means the update released in the 4th Quarter of 2023.
+- `24A` means the update released in the 1st Quarter of 2024.
+- `24B` means the update released in the 2nd Quarter of 2024.
+
+### Where to Find It in the System
+Checking your version takes just two clicks:
+1. **Click your User Profile Image/Name** in the top-right corner of the global header.
+2. From the drop-down menu (Settings and Actions), click on **`About This Application`**.
+3. A small pop-up window will appear displaying the exact version (e.g., *Oracle Fusion Cloud Applications 24B (11.13.24.04.0)*).
