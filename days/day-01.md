@@ -113,6 +113,22 @@ This is a critical framework defining who is responsible for what:
 
 In a SaaS environment like Oracle Fusion, Oracle handles roughly 80-90% of the technical security and maintenance burden.
 
+### 7. Understanding Consultant Job Titles
+When exploring the job market or talking to recruiters, you will see various job titles for the people who implement and configure this system. Despite the different names, they almost always refer to the exact same role. The most common titles are:
+- **Oracle Fusion Financial Consultant**
+- **Oracle Fusion Cloud Financial Consultant**
+- **Oracle Cloud Financial Consultant**
+- **Oracle Fusion Financial Functional Consultant**
+
+**What does this role actually do?**
+Because Oracle handles the databases and infrastructure in the cloud (as discussed above), these roles are **Functional Consultants**. Their primary job is not writing code, but rather:
+1. **Requirement Gathering:** Talking to the business to understand their accounting and financial processes.
+2. **System Mapping:** Mapping those business processes into the Oracle framework.
+3. **Configuration:** Setting up and configuring the modules (GL, AP, AR, CM, FA) in the front-end user interface to meet the business's specific needs.
+4. **Testing & Training:** Ensuring the system works as designed and training the end-users.
+
+*Note: The word "Functional" is often implied, even if it's missing from the job title. Because it is a SaaS application, the need for "Technical" consultants (who write custom code or manage databases) is significantly reduced compared to traditional On-Premise systems.*
+
 ## Key terms
 - **ERP**: Enterprise Resource Planning, software that runs a company's main business processes in one system.
 - **Module**: one functional area of an application, for example AP.
