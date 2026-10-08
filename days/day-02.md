@@ -106,5 +106,7 @@ To actually create this user in a brand-new system, you must follow these exact 
    - **User Name:** fusion user 1
    - **Password:** Abcd@1233
    - **Confirm Password:** Abcd@1233
-6. **Assign Roles:** Search for and assign the two foundational roles (`Application Implementation Consultant` and `IT Security Manager`).
+6. **Add Roles:** Scroll down to the Roles section and click the **`Add Role`** button. Search for and add the following two roles one by one:
+   - `Application Implementation Consultant`
+   - `IT Security Manager`
 7. **Save:** Click **Save and Close**.
