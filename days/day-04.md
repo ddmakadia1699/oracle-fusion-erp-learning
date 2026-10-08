@@ -134,3 +134,7 @@ Once the laptops are shipped (Ship Confirm), the physical warehouse job is done.
 ### Step 5: Common Department (General Ledger - GL)
 - Just like the buying cycle, the selling cycle ends in the **General Ledger**. 
 - The GL team takes the revenue data from AR and the cash data from CM to generate the final **Profit & Loss (P&L)** reports for the management team.
+
+---
+
+> **Conclusion:** This entire end-to-end flow—from the customer asking for laptops, to checking inventory, picking and shipping them, billing the customer, reconciling the bank account, and generating the financial reports—is the complete **Order-to-Cash (O2C) Cycle**!
