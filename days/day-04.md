@@ -8,7 +8,18 @@ To understand this, let's walk through an example where a customer calls and wan
 
 ---
 
-## 1. The Sales Flow (Selling 100 Laptops)
+## 1. Official Oracle Fusion Module Abbreviations (The O2C Stack)
+Just like the buying cycle, professionals use official acronyms when discussing the Order-to-Cash cycle modules. You must memorize these:
+
+- **INV** = Oracle Fusion Inventory
+- **OM** = Oracle Fusion Order Management
+- **AR** = Oracle Fusion Accounts Receivable
+- **CM** = Oracle Fusion Cash Management
+- **GL** = Oracle Fusion General Ledger
+
+---
+
+## 2. The Sales Flow (Selling 100 Laptops)
 
 ### Step 1: Inventory Check
 Before we can sell anything, the system must check the **Inventory Department** to see if we have enough stock.
@@ -29,7 +40,7 @@ Because we have the stock, the Sales Department takes over to process the custom
 
 ---
 
-## 2. Deep Dive: Inside the Warehouse (Inventory Org Structure)
+## 3. Deep Dive: Inside the Warehouse (Inventory Org Structure)
 
 When the Sales Order is booked, the physical work begins. But how does Oracle actually organize a physical warehouse in the software? 
 
@@ -48,7 +59,7 @@ In Oracle, a warehouse is called an **Inventory Organization (Inv Org)**. Inside
 
 ---
 
-## 3. Visualizing the Warehouse Architecture
+## 4. Visualizing the Warehouse Architecture
 
 Here is how Oracle Fusion logically visualizes the physical layout of the warehouse to process your 100 laptops:
 
@@ -80,7 +91,7 @@ graph TD
     class STG stage;
 ```
 
-## 4. The Communication Between Sales and Inventory
+## 5. The Communication Between Sales and Inventory
 
 Once the Sales Order is booked, the **Sales Department (Order Management)** and the **Inventory Department** must constantly talk to each other to fulfill the order.
 
@@ -99,7 +110,7 @@ Here is the exact step-by-step technical handshake:
 
 ---
 
-## 5. The Financial Flow (Getting Paid!)
+## 6. The Financial Flow (Getting Paid!)
 Once the laptops are shipped (Ship Confirm), the physical warehouse job is done. Now, the financial departments take over to make sure the company actually gets paid.
 
 ### Step 3: Receivables Department (AR)
