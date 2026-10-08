@@ -4,7 +4,19 @@
 
 In Oracle Fusion, buying something for a company isn't just a single click. It involves an entire lifecycle called the **Procure-to-Pay (P2P)** cycle. This process touches multiple different departments and Oracle modules before the transaction is fully complete.
 
-## 1. Real-World Example: Buying 100 Laptops
+## 1. Official Oracle Fusion Module Abbreviations (The P2P Stack)
+In the ERP industry, professionals rarely use the full department names. Instead, they refer to the specific Oracle Fusion modules using their official acronyms. You must memorize these:
+
+- **INV** = Oracle Fusion Inventory
+- **PO** = Oracle Fusion Purchasing *(Note: The "Purchasing" umbrella often includes both Oracle Sourcing and Oracle Purchasing modules).*
+- **AP** = Oracle Fusion Accounts Payable
+- **FA** = Oracle Fusion Fixed Assets
+- **CM** = Oracle Fusion Cash Management 
+- **GL** = Oracle Fusion General Ledger
+
+---
+
+## 2. Real-World Example: Buying 100 Laptops
 To understand the Procure-to-Pay process, let's look at a real-world scenario where a company needs to buy 100 laptops. Here is how the transaction flows across different departments in Oracle Fusion:
 
 ### Step 1: Inventory / Warehouse Department
@@ -39,7 +51,7 @@ To understand the Procure-to-Pay process, let's look at a real-world scenario wh
 
 ---
 
-## 2. Comparing Purchase Types with Examples
+## 3. Comparing Purchase Types with Examples
 The "100 Laptops" example above represents the most complex flow because a laptop is both an **Item** (it goes into Inventory) and a **Fixed Asset** (it depreciates). 
 
 However, the P2P cycle changes depending on *what* you are buying. Let's look at 4 different examples:
@@ -53,7 +65,7 @@ However, the P2P cycle changes depending on *what* you are buying. Let's look at
 
 ---
 
-## 3. Visualizing the Flow (Mermaid Graph)
+## 4. Visualizing the Flow (Mermaid Graph)
 
 Here is a visual representation of how the data and responsibilities flow between the departments:
 
@@ -105,7 +117,7 @@ graph TD
 
 ---
 
-## 4. Deep Dive: What is Invoice Matching?
+## 5. Deep Dive: What is Invoice Matching?
 In Oracle Fusion, **Invoice Matching** is a strict internal security control used by the Accounts Payable (AP) department. It ensures the company never overpays a vendor and only pays for what was actually ordered and received. 
 
 Oracle automatically cross-checks (matches) the vendor's invoice against internal documents before it allows the Cash department to make the payment.
