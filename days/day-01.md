@@ -33,6 +33,15 @@ Financials is a set of modules, and each one supports a business department:
 | **PPM** (Project Portfolio Management) | Project costing, billing, and management |
 | **Procurement** | Purchasing, suppliers, requisitions (closely linked to SCM) |
 | **CX** (Customer Experience) | Sales, service, marketing (CRM) |
+| **EPM** (Enterprise Performance Management) | Planning, budgeting, consolidation, financial reporting (this is what **Hyperion** became) |
+
+### Other Oracle products
+| Product | Category | What it is |
+|---------|----------|------------|
+| **Primavera** | PPM (Project Portfolio Management) | Project planning and scheduling for large projects such as construction and engineering (for example Primavera P6) |
+| **Hyperion** | EPM (Enterprise Performance Management) | Budgeting, forecasting, consolidation and financial reporting. It is now offered as Oracle EPM Cloud |
+
+> Fusion also has its own **PPM** module (Project Financial Management) for project costing and billing. Primavera is the separate, specialist tool for scheduling large projects.
 
 ### 4. What does "Fusion" mean?
 **Oracle Fusion** is Oracle's next-generation application suite. It brings together the best features of Oracle's older product lines in one modern platform, now delivered on the cloud:
@@ -51,7 +60,7 @@ Financials is a set of modules, and each one supports a business department:
 
 ## Questions / doubts
 - How do AP, AR, CM and FA connect to the General Ledger?
-- What are the other Fusion families (EPM, Risk Management)?
+- How do Primavera and Hyperion connect with Fusion ERP?
 
 ## Tomorrow
 - Fusion architecture and how to navigate the application
