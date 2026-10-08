@@ -44,18 +44,22 @@ Financials is a set of modules, and each one supports a business department:
 > Fusion also has its own **PPM** module (Project Financial Management) for project costing and billing. Primavera is the separate, specialist tool for scheduling large projects.
 
 ### 4. What does "Fusion" mean?
-**Oracle Fusion** is a collection of the best modules from various other ERP systems. Essentially, Oracle bought nearly every major enterprise software company (other than SAP) and combined their best features into one modern platform, now delivered on the cloud.
+**Oracle Fusion** is a collection of the best modules from various other ERP systems. 
 
-So in Fusion, we have:
+**The Acquisition Strategy:** In the early 2000s, Oracle went on a massive acquisition spree to buy the best-in-class software companies in every domain (other than SAP) to build their next-generation "Fusion" platform.
+
+**Important Note:** Fusion isn't just a "copy-paste" of these old systems. Oracle rewrote everything from scratch in a modern, cloud-native architecture (Oracle Fusion Middleware) but took the *best business processes and features* from all the companies they acquired.
+
+Here is where the core modules of Fusion originated:
 
 | Original Product / Company | Known for | Where it lives in Fusion |
 |----------------------------|-----------|--------------------------|
-| **Oracle E-Business Suite (EBS)** | Financials | Fusion Financials / ERP |
-| **PeopleSoft** | HCM (HR) | Fusion HCM |
-| **JD Edwards (JDE)** | Procurement / SCM | Fusion PRC / SCM |
-| **Siebel** | CRM | Fusion CX |
-| **Primavera** | PPM (Project Management) | Fusion PPM |
-| **Hyperion** | Reporting / EPM | Fusion EPM |
+| **Oracle E-Business Suite (EBS)** | Its strongest suite was Financials. | **Fusion Financials / ERP** |
+| **PeopleSoft** | The gold standard for HR systems. | **Fusion HCM** |
+| **JD Edwards (JDE)** | Unmatched capabilities in Manufacturing & Supply Chain. | **Fusion SCM** (and Procurement) |
+| **Siebel** | The market leader in CRM before Salesforce. | **Fusion CX** (Customer Experience) |
+| **Primavera** | Specialist tool for scheduling large projects. | **Fusion PPM** (Project Portfolio Management) |
+| **Hyperion** | Budgeting, forecasting, and consolidation. | **Fusion EPM** (Enterprise Performance Management) |
 
 ## Key terms
 - **ERP**: Enterprise Resource Planning, software that runs a company's main business processes in one system.
