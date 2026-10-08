@@ -156,3 +156,15 @@ Checking your version takes just two clicks:
 1. **Click your User Profile Image/Name** in the top-right corner of the global header.
 2. From the drop-down menu (Settings and Actions), click on **`About This Application`**.
 3. A small pop-up window will appear displaying the exact version (e.g., *Oracle Fusion Cloud Applications 24B (11.13.24.04.0)*).
+
+### Deep Dive: Decoding the Technical Version String `(11.13.YY.QQ.P)`
+In the pop-up window, you will notice a technical string of numbers inside the parentheses, such as `11.13.24.04.0`. Technical teams use this to know exactly what patch level the system is on. Here is how to read it:
+
+- **`11.13`:** This is the base system architecture identifier. (All modern Oracle Fusion Cloud instances run on Release 13 architecture).
+- **`24` (YY):** Represents the **Year** (2024).
+- **`04` (QQ):** Represents the **Quarter/Month**. 
+  - `01` = Q1 (A release)
+  - `04` = Q2 (B release)
+  - `07` = Q3 (C release)
+  - `10` = Q4 (D release)
+- **`0` (P):** Represents the **Patch Level**. A `0` means it is the base quarterly release. If Oracle applied a major mid-quarter bug fix, this number might bump up to a `.1` or `.2`.
