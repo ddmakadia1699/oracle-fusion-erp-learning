@@ -60,6 +60,22 @@ Here is where the core modules of Fusion originated:
 | **Siebel** | The market leader in CRM before Salesforce. | **Fusion CX** (Customer Experience) |
 | **Primavera** | Specialist tool for scheduling large projects. | **Fusion PPM** (Project Portfolio Management) |
 | **Hyperion** | Budgeting, forecasting, and consolidation. | **Fusion EPM** (Enterprise Performance Management) |
+### 5. What is the Cloud? (On-Premise vs Cloud)
+To understand the benefit of Oracle Fusion (which is a Cloud/SaaS application), let's compare two companies:
+
+**Company A (On-Premise Approach):**
+To run a traditional ERP, this company has to:
+- Buy and maintain physical **servers**
+- Purchase expensive software **licenses** upfront
+- **Install** and configure the software themselves
+- Hire a dedicated **Fusion App DBA** (Database Administrator)
+- Maintain a full **technical team** for patching, upgrades, and troubleshooting
+
+**Company B (Cloud/SaaS Approach):**
+To run Oracle Fusion, this company simply:
+- Buys a **subscription** to Oracle Fusion
+
+Oracle handles the servers, installation, databases, and updates. Company B just logs in through a web browser and starts using the system.
 
 ## Key terms
 - **ERP**: Enterprise Resource Planning, software that runs a company's main business processes in one system.
