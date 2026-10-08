@@ -102,3 +102,29 @@ graph TD
 4. **Assets** tracks the laptops as long-term investments (Capitalization).
 5. **Cash** actually pays for them and checks the bank (Reconciliation).
 6. **General Ledger** builds the final reports from everyone's data.
+
+---
+
+## 4. Deep Dive: What is Invoice Matching?
+In Oracle Fusion, **Invoice Matching** is a strict internal security control used by the Accounts Payable (AP) department. It ensures the company never overpays a vendor and only pays for what was actually ordered and received. 
+
+Oracle automatically cross-checks (matches) the vendor's invoice against internal documents before it allows the Cash department to make the payment.
+
+There are three types of matching levels:
+
+### 1. 2-Way Matching
+- **Documents Checked:** **Invoice** vs. **Purchase Order (PO)**
+- **How it works:** The system checks if the *Quantity* and *Price* on the invoice match the *Quantity* and *Price* on the original PO.
+- **Example:** You hire a cleaning service for $500 (PO). The cleaner sends an invoice for $500. Because it's a service (you can't physically "receive" cleaning into a warehouse), the system just matches the Invoice directly to the PO. If they match, payment is approved.
+
+### 2. 3-Way Matching *(The Industry Standard)*
+- **Documents Checked:** **Invoice** vs. **PO** vs. **Goods Receipt Note (GRN)**
+- **How it works:** This is the most common match for physical items. The system checks:
+  1. Does the invoice price match the PO price?
+  2. Does the invoice quantity match the **quantity physically received** in the warehouse?
+- **Example:** You order 100 laptops (PO). The vendor only delivers 90 laptops today (GRN says 90). The vendor accidentally sends an invoice for all 100 laptops. The **3-Way Match will fail** and place a "Hold" on the invoice because 100 (Invoice Qty) does not match 90 (Received Qty). The AP team will only pay for 90.
+
+### 3. 4-Way Matching *(For Strict Quality Control)*
+- **Documents Checked:** **Invoice** vs. **PO** vs. **Receipt (GRN)** vs. **Inspection Report**
+- **How it works:** Used for highly sensitive or expensive materials. The system will not pay just because the item arrived; it must also pass a quality inspection.
+- **Example:** You order 100 sterile medical machines. They arrive at the warehouse (Receipt). However, 5 of them fail the health inspection. The system will only approve payment for the 95 that passed inspection. If the vendor invoices for 100, the 4-way match fails and payment is blocked.
