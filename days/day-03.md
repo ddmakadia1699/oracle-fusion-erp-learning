@@ -72,13 +72,13 @@ Here is a visual representation of how the data and responsibilities flow betwee
 ```mermaid
 graph TD
     %% Departments
-    INV[Inventory Department]
-    PUR[Purchasing Department]
+    INV[Inventory Department - INV]
+    PUR[Purchasing Department - PO]
     SUP((Supplier))
-    AP[Payables Department]
-    CE[Cash Department]
-    FA[Fixed Asset Department]
-    GL[(General Ledger - Common Hub)]
+    AP[Payables Department - AP]
+    CE[Cash Department - CM]
+    FA[Fixed Asset Department - FA]
+    GL[(General Ledger - GL)]
 
     %% Flow of Process
     INV -->|1. Creates PR Request| PUR
