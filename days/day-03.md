@@ -140,3 +140,24 @@ There are three types of matching levels:
 - **Documents Checked:** **Invoice** vs. **PO** vs. **Receipt (GRN)** vs. **Inspection Report**
 - **How it works:** Used for highly sensitive or expensive materials. The system will not pay just because the item arrived; it must also pass a quality inspection.
 - **Example:** You order 100 sterile medical machines. They arrive at the warehouse (Receipt). However, 5 of them fail the health inspection. The system will only approve payment for the 95 that passed inspection. If the vendor invoices for 100, the 4-way match fails and payment is blocked.
+
+---
+
+## 6. Advanced P2P Concepts (Implementation Deep Dive)
+If you want to master Oracle Fusion Procure-to-Pay, you must also understand these advanced backend concepts that govern how the cycle actually works behind the scenes.
+
+### A. Receipt Routing (How Goods Actually Enter the Building)
+When the vendor delivers goods (Step 3), the system needs to know exactly how to route them internally. Oracle offers three types of Receipt Routing:
+1. **Direct Delivery:** The goods bypass the warehouse entirely and go straight to the requester's desk (e.g., ordering a specific mouse for a specific employee). 
+2. **Standard Receipt:** The goods arrive at the main receiving dock. A warehouse worker scans them in. Later, they do a second "put-away" step to move them to a specific shelf in the inventory room.
+3. **Inspection Required:** The goods are received at the dock, but they are placed in a quarantine status. They cannot be used or paid for until a quality inspector tests them and records a "Pass" in the system.
+
+### B. Tolerances (Managing Variances)
+In the real world, things rarely match perfectly. Oracle uses **Tolerances** to handle slight differences without breaking the whole process.
+- **Receiving Tolerances:** What if you ordered 100 laptops, but the vendor accidentally shipped 101? You can set a tolerance of "allow 1% over-receipt." The system will accept the extra laptop instead of rejecting the entire truck.
+- **Invoice Tolerances:** What if the PO said the cleaning service was $500, but the invoice came in at $502 due to a tiny tax rounding issue? An invoice tolerance (e.g., "Allow up to a $5 difference") will let the match pass automatically, saving the AP team from having to manually investigate a $2 discrepancy.
+
+### C. Subledger Accounting (SLA) - The Invisible Bridge to GL
+In Step 7, we said the General Ledger (GL) builds reports from everyone's data. But how does the data get from the Payables module (AP) to the General Ledger (GL)?
+- It uses **Subledger Accounting (SLA)**. 
+- SLA is a powerful, rules-based engine. Every time a transaction happens in a sub-department (like a GRN being created, or an Invoice being validated), SLA intercepts it, applies accounting rules, generates the official Debit and Credit journal entries, and transfers those entries directly into the GL. If SLA fails, the transaction is stuck in the sub-department and the GL will be out of balance!
