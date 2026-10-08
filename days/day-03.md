@@ -39,7 +39,21 @@ To understand the Procure-to-Pay process, let's look at a real-world scenario wh
 
 ---
 
-## 2. Visualizing the Flow (Mermaid Graph)
+## 2. Comparing Purchase Types with Examples
+The "100 Laptops" example above represents the most complex flow because a laptop is both an **Item** (it goes into Inventory) and a **Fixed Asset** (it depreciates). 
+
+However, the P2P cycle changes depending on *what* you are buying. Let's look at 4 different examples:
+
+| Purchase Type | Example | How the Flow Changes |
+| :--- | :--- | :--- |
+| **1. Item (Standard)** | Buying 500 reams of printer paper. | Follows the standard flow (PR ➔ PO ➔ GRN ➔ Invoice ➔ Payment). It **skips** the Fixed Asset department because paper is used up immediately, not depreciated. |
+| **2. Fixed Asset** | Buying a $50,000 factory machine. | Follows the full flow. Payables shares the Invoice with the **Fixed Assets** department via "Mass Additions" so it can be capitalized and depreciated over 10 years. |
+| **3. Service** | Hiring a company for weekly office cleaning. | You still create a PR and PO, but you **skip Inventory/GRN** because you cannot physically store "cleaning" in a warehouse. Payables receives the invoice directly against the PO. |
+| **4. Expense** | An employee buys a $50 train ticket for a business trip. | Often **skips Purchasing (no PO)** and **skips Inventory**. The employee simply submits an Expense Report. The Payables department books the Expense Invoice and the Cash department reimburses the employee. |
+
+---
+
+## 3. Visualizing the Flow (Mermaid Graph)
 
 Here is a visual representation of how the data and responsibilities flow between the departments:
 
