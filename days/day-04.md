@@ -80,7 +80,19 @@ graph TD
     class STG stage;
 ```
 
-### Summary of the Pick & Ship Process:
-1. **Pick Release:** The system tells the warehouse worker to go to *Subinv 1* to grab 100 laptops.
-2. **Pick Confirm:** The worker confirms they moved the laptops from *Subinv 1* to the **Staging Area**.
-3. **Ship Confirm:** The truck arrives, the boxes are loaded, and the laptops officially leave the Staging Area to go to the customer.
+## 4. The Communication Between Sales and Inventory
+
+Once the Sales Order is booked, the **Sales Department (Order Management)** and the **Inventory Department** must constantly talk to each other to fulfill the order.
+
+Here is the exact step-by-step technical handshake:
+
+1. **Pick Release (Sales ➔ Inventory):** 
+   - The Sales team initiates a "Pick Release". This sends a digital signal to the warehouse saying, *"Go grab the 100 laptops from Subinv 1!"*
+2. **Pick Confirm (Internal to Inventory):** 
+   - The warehouse worker finds the laptops in Subinv 1 and moves them to the Staging Area. They log this in the system as a "Pick Confirm".
+3. **Ship Confirmation (Inventory ➔ Sales):** 
+   - The delivery truck arrives, the laptops are loaded, and the truck drives away. 
+   - The Inventory department performs a **"Ship Confirm"**. This crucial step tells the Sales system, *"The item went out."* The system immediately deducts 100 laptops from the on-hand stock and tells the finance department to generate the customer's invoice.
+4. **Customer Return / Sales Returns (Sales ➔ Inventory):**
+   - What happens if the laptops reach the customer's warehouse, but 5 of them have shattered screens? 
+   - The customer will send them back. The Sales department will create an **RMA (Return Material Authorization)** to log a "Sales Return". When the delivery truck brings them back, the Inventory department receives them into a specific subinventory (like *Subinv 3: Returns*) so they aren't accidentally sold to someone else.
