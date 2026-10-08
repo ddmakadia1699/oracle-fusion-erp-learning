@@ -52,3 +52,5 @@ Typically, a standard Oracle SaaS subscription provides a company with at least 
 
 2. **Prod Instance (Production):**
    - This is the **live** environment. Once everything is perfectly configured and tested in the Test instance, the final setup is migrated to Production. This is where the company conducts its actual day-to-day business (real invoices, real payments, real financial closing).
+
+*Note: While 2 instances (Test and Prod) are standard, a company can request more than 2 instances from Oracle (for example, a dedicated DEV instance, a separate UAT instance, or a Training instance). However, **extra instances cost extra money** as they require Oracle to allocate more computing resources.*
