@@ -54,3 +54,17 @@ Notice that three modules sit perfectly in the center, acting as bridges between
    - It receives **Receipt** data from AR (money coming in).
    - It performs the **Bank Statement Reconciliation** for both.
 3. **GL (General Ledger) at the bottom:** It is the reporting bridge. Arrows from AP, CM, AR, and FA all converge here. It consolidates every single transaction from both cycles to generate the final **Financial Reports**.
+
+---
+
+## 5. Implementation Deep Dive: Subledger Accounting (SLA)
+While the flowchart beautifully maps the *functional* flow of documents (like POs and RMAs), it hides a massive, invisible technical engine called **Subledger Accounting (SLA)**.
+
+Based on industry implementation standards, here is what is actually happening behind the scenes to bridge the SCM layer with the Financials layer:
+
+- **The Event Trigger:** SCM (Supply Chain) doesn't just hand numbers to the GL. Every time an operational event happens in SCM (like a *Goods Receipt* or a *Ship Confirm*), it triggers an "Accounting Event".
+- **The SLA Interception:** The SLA engine sits exactly on the line separating the middle subledger modules (AP/AR/CM/FA) and the General Ledger (GL). It intercepts the accounting event.
+- **The AMB Rules:** SLA uses the **Accounting Methods Builder (AMB)**. It looks at the transaction and applies complex, predefined business rules to figure out exactly which account to Debit and which account to Credit.
+- **The GL Push:** Once SLA builds the journal entries, it pushes them down to the General Ledger. 
+
+This architecture allows a massive global company to have consistent accounting policies. The warehouse workers just focus on moving boxes (SCM), while the SLA engine automatically handles the complex financial journal entries (Financials), creating a perfectly unified "single version of the truth."
