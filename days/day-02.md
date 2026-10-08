@@ -99,4 +99,12 @@ To actually create this user in a brand-new system, you must follow these exact 
 2. **Navigate to Security Console:** Click the Hamburger Menu (Navigator icon in the top left).
 3. **Go to:** `Navigator` ➔ `Tools` ➔ `Security Console`
 4. **Create User:** Click on the `Users` tab and click the **`Add User Account`** button.
-5. Fill in the details for the dummy user and assign the two foundational roles mentioned above.
+5. **Fill in the User Information:** Enter the details for your dummy user. For example:
+   - **User Category:** Default
+   - **First Name:** fusion
+   - **Last Name:** user 1
+   - **User Name:** fusion user 1
+   - **Password:** Abcd@1233
+   - **Confirm Password:** Abcd@1233
+6. **Assign Roles:** Search for and assign the two foundational roles (`Application Implementation Consultant` and `IT Security Manager`).
+7. **Save:** Click **Save and Close**.
