@@ -149,6 +149,8 @@ Oracle uses a very simple naming convention for its quarterly releases. It combi
 - `24A` means the update released in the 1st Quarter of 2024.
 - `24B` means the update released in the 2nd Quarter of 2024.
 
+*(Note: As of late 2026, the latest major quarterly releases are **26C** and **26D**. These recent releases focus heavily on "Fusion Agentic Applications"—embedding AI directly into business processes so the system can autonomously reason over data and complete tasks!)*
+
 ### Where to Find It in the System
 Checking your version takes just two clicks:
 1. **Click your User Profile Image/Name** in the top-right corner of the global header.
