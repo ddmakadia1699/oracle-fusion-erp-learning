@@ -92,3 +92,11 @@ To actually configure the system, this Implementation User must be assigned two 
    
 2. **IT Security Manager:**
    - This role grants access to the **Security Console**. It allows the user to create new user accounts, build custom security roles, reset passwords, and assign roles to other users. Without this role, the consultant would be unable to grant system access to anyone else on the project.
+
+### How to Create the Implementation User
+To actually create this user in a brand-new system, you must follow these exact steps:
+1. **Initial Login:** Log in using the main `fusionuser` (the initial super-user credentials provided directly by Oracle when they hand over the instance).
+2. **Navigate to Security Console:** Click the Hamburger Menu (Navigator icon in the top left).
+3. **Go to:** `Navigator` ➔ `Tools` ➔ `Security Console`
+4. **Create User:** Click on the `Users` tab and click the **`Add User Account`** button.
+5. Fill in the details for the dummy user and assign the two foundational roles mentioned above.
