@@ -110,7 +110,23 @@ To actually create this user in a brand-new system, you must follow these exact 
    - `Application Implementation Consultant`
    - `IT Security Manager`
    - *(Optional but recommended)* `Employee` - This abstract role is often added so the dummy user can run scheduled processes (ESS jobs) and access standard self-service pages.
+
+   *(Note: When you search for these roles, you will notice they have "Role Codes" starting with `ORA_`, `FND_`, etc. See the breakdown below on which one to select).*
+
 7. **Save:** Click **Save and Close**.
+
+### Understanding Role Codes (ORA vs. Custom)
+When you search for a role in the Security Console, you will see a **Role Code** attached to it (e.g., `ORA_ASM_APPLICATION_IMPLEMENTATION_CONSULTANT_JOB` or `ORA_FND_IT_SECURITY_MANAGER_JOB`). 
+
+Here is what these prefixes mean and which ones to select:
+
+- **The `ORA_` Prefix:** Any role code starting with `ORA_` is a **Seeded Role**. This means it is a standard, out-of-the-box role created and locked by Oracle.
+  - *Module Prefixes:* The letters after `ORA_` tell you what module the role belongs to. For example, `FND_` means Foundation (core system/security tools), `ASM_` means Application Setup Manager (implementation), `FIN_` means Financials, and `PER_` means Personnel (HCM).
+- **The Custom Prefix (e.g., `XX_`):** When you copy an Oracle seeded role to create a custom version for your company, the system automatically strips the `ORA_` prefix. Companies usually add their own prefix, like `XX_` or `CUS_`.
+
+**Which one should you select?**
+1. **For the Implementation User (Day 1):** You **MUST** select the `ORA_` roles. Since the system is brand new, no custom roles exist yet! You need the out-of-the-box `ORA_` roles to get started.
+2. **For Actual Business Users (Later on):** Best practice dictates that you should **rarely** assign `ORA_` roles to actual employees. Seeded roles often grant too much access. Instead, you will copy the `ORA_` role, remove the privileges the employee doesn't need (creating a custom `XX_` role), and assign the custom role to the employee.
 
 ### 🏆 Expert Best Practices for Implementation Users
 If you want to manage security like a pro (and write a great book), keep these industry-standard best practices in mind:
