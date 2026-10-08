@@ -44,14 +44,18 @@ Financials is a set of modules, and each one supports a business department:
 > Fusion also has its own **PPM** module (Project Financial Management) for project costing and billing. Primavera is the separate, specialist tool for scheduling large projects.
 
 ### 4. What does "Fusion" mean?
-**Oracle Fusion** is Oracle's next-generation application suite. It brings together the best features of Oracle's older product lines in one modern platform, now delivered on the cloud:
+**Oracle Fusion** is a collection of the best modules from various other ERP systems. Essentially, Oracle bought nearly every major enterprise software company (other than SAP) and combined their best features into one modern platform, now delivered on the cloud.
 
-| Older Oracle product | Known for | Where it lives in Fusion |
-|----------------------|-----------|--------------------------|
-| **E-Business Suite (EBS)** | Financials | Fusion Financials / ERP |
-| **PeopleSoft** | HCM | Fusion HCM |
-| **JD Edwards (JDE)** | Manufacturing, supply chain | Fusion SCM |
+So in Fusion, we have:
+
+| Original Product / Company | Known for | Where it lives in Fusion |
+|----------------------------|-----------|--------------------------|
+| **Oracle E-Business Suite (EBS)** | Financials | Fusion Financials / ERP |
+| **PeopleSoft** | HCM (HR) | Fusion HCM |
+| **JD Edwards (JDE)** | Procurement / SCM | Fusion PRC / SCM |
 | **Siebel** | CRM | Fusion CX |
+| **Primavera** | PPM (Project Management) | Fusion PPM |
+| **Hyperion** | Reporting / EPM | Fusion EPM |
 
 ## Key terms
 - **ERP**: Enterprise Resource Planning, software that runs a company's main business processes in one system.
