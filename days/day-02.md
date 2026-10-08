@@ -78,3 +78,17 @@ Oracle automatically pushes updates and patches to the cloud software. However, 
 
 **The "Blackout" Catch:** 
 Because of this staggered update cycle, there is a two-week period where Test and Prod are on *different software versions*. During this blackout window, you **cannot perform a P2T clone**, because a clone requires both environments to be on the exact same patch level. This is a major reason why large companies pay for a 3rd or 4th instance—so they always have an environment available for testing and cloning, even during blackout periods.
+
+## 5. First Steps: Creating the Implementation User
+
+When a brand-new Oracle Fusion instance is handed over to the consulting team, it is essentially a blank slate. The very first action the team takes is creating an **Implementation User**.
+
+An Implementation User is a "dummy" or system user account created specifically for the project team (it does not correspond to a real company employee). This user account is used to perform all the initial system configurations without tying the setup history to a specific person's name.
+
+To actually configure the system, this Implementation User must be assigned two highly privileged, foundational roles:
+
+1. **Application Implementation Consultant:**
+   - This is the master role for configuration. It grants access to the "Setup and Maintenance" work area, allowing the consultant to configure, set up, and implement almost all modules across the system (Financials, SCM, HCM).
+   
+2. **IT Security Manager:**
+   - This role grants access to the **Security Console**. It allows the user to create new user accounts, build custom security roles, reset passwords, and assign roles to other users. Without this role, the consultant would be unable to grant system access to anyone else on the project.
