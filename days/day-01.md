@@ -1,16 +1,59 @@
 # Day 1 — 2026-10-08
 
-**Topic:** 
+**Topic:** Introduction to Oracle Fusion Cloud Applications and Financial Modules
+
 **Time spent:** 
 
 ## What I learned
-- 
 
-## Hands-on / practice
-- 
+### 1. What is an application?
+An application is made of three parts:
+- **Pages**: the screens the user works on
+- **Reports**: output and analysis of the data
+- **Database**: where all the data is stored
+
+### 2. What is Oracle Fusion Cloud Financials?
+Financials is a set of modules, and each one supports a business department:
+
+| Module | Short name | Department | What it handles |
+|--------|-----------|------------|-----------------|
+| Payables | **AP** | Payables department | Supplier invoices, payments |
+| Receivables | **AR** | Receivables department | Customer billing, receipts |
+| Cash Management | **CM** | Cash department | Bank accounts, bank statement reconciliation |
+| Fixed Assets | **FA** | Assets department | Fixed assets, depreciation |
+
+> The core of Financials is **General Ledger (GL)**. AP, AR, CM and FA all send their accounting entries to GL.
+
+### 3. Other Oracle Fusion Cloud product families
+| Family | What it contains |
+|--------|------------------|
+| **ERP / Financials** | GL, AP, AR, CM, FA, and more |
+| **HCM** (Human Capital Management) | Core HR, Payroll, Talent, and more |
+| **SCM** (Supply Chain Management) | Inventory, Purchasing, Order Management (sales), and more |
+| **PPM** (Project Portfolio Management) | Project costing, billing, and management |
+| **Procurement** | Purchasing, suppliers, requisitions (closely linked to SCM) |
+| **CX** (Customer Experience) | Sales, service, marketing (CRM) |
+
+### 4. What does "Fusion" mean?
+**Oracle Fusion** is Oracle's next-generation application suite. It brings together the best features of Oracle's older product lines in one modern platform, now delivered on the cloud:
+
+| Older Oracle product | Known for | Where it lives in Fusion |
+|----------------------|-----------|--------------------------|
+| **E-Business Suite (EBS)** | Financials | Fusion Financials / ERP |
+| **PeopleSoft** | HCM | Fusion HCM |
+| **JD Edwards (JDE)** | Manufacturing, supply chain | Fusion SCM |
+| **Siebel** | CRM | Fusion CX |
+
+## Key terms
+- **ERP**: Enterprise Resource Planning, software that runs a company's main business processes in one system.
+- **Module**: one functional area of an application, for example AP.
+- **SaaS**: Software as a Service. Oracle hosts and updates Fusion, and you use it through a browser.
 
 ## Questions / doubts
-- 
+- How do AP, AR, CM and FA connect to the General Ledger?
+- What are the other Fusion families (EPM, Risk Management)?
 
 ## Tomorrow
-- 
+- Fusion architecture and how to navigate the application
+- What the Setup and Maintenance work area is
+- Key terms: ledger, legal entity, business unit
