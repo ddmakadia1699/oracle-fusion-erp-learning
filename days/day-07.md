@@ -170,7 +170,13 @@ One of the greatest operational powers of an Implementation Project is **work de
      - Assign all Payables setup tasks to the **AP Consultant**.
      - Assign all Asset setup tasks to the **Fixed Assets Consultant**.
    - **Personalized Work Area:** When assigned users log into Oracle and open *Manage Implementation Projects*, the dashboard automatically filters and surfaces the exact tasks assigned to their username.
-   - **Accountability & Tracking:** Each consultant independently updates their task status (*Not Started* $\rightarrow$ *In Progress* $\rightarrow$ *Completed*) and attaches notes, allowing project managers to monitor live % completion across the team.
+
+3. **Managing Task Status After Assignment:**
+   - **Status Flexibility:** Even after a task has been assigned to another team member, the task status is not locked.
+   - The assigned user (or the project lead) can update the task's status at any point:
+     - **Not Started** $\rightarrow$ **In Progress** $\rightarrow$ **Completed**.
+   - You can also record progress notes, set completion dates, or reassign the task if a teammate is unavailable.
+   - Transitioning task statuses to *Completed* automatically rolls up into the project's overall **% Complete** metric, giving the project manager real-time visibility across the entire implementation.
 
 ### Editing Project & Task Details (Updating Status)
 - In the project view (or from the project list), click the **Edit** button (or pencil icon).
@@ -181,6 +187,7 @@ One of the greatest operational powers of an Implementation Project is **work de
 - Once the updates are made, click **Save and Close** to persist the changes.
 
 ---
+
 
 
 
@@ -212,6 +219,7 @@ Beyond organizing tasks, Implementation Projects are required for **Environment 
 - [x] **Discovered System Rule:** Verified that the **Code** field is strictly **not editable** after the project is created.
 - [x] Explored the generated hierarchy below the header: distinguished between **Task Lists** (folders grouping setups) and **Tasks** (actionable setup screens), observing that only Financials setups were populated based on our offering selection.
 - [x] **Delegation & Governance:** Understood how individual tasks and task lists can be assigned to **any user/consultant** with due dates and progress statuses.
+- [x] **Post-Assignment Status Tracking:** Confirmed that task statuses (*Not Started*, *In Progress*, *Completed*) can be actively modified and maintained even after delegation to another team member.
 
 
 
