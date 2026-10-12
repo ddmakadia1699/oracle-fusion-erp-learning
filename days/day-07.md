@@ -136,6 +136,12 @@ Once you click **Save and Open Project**, Oracle presents the full **Task Hierar
 - **Status & Progress Tracking:** Track execution status for each task (*Not Started*, *In Progress*, *Completed*), enter due dates, and view overall project % completion.
 - **Direct Navigation ("Go to Task"):** Clicking the **Go to Task** button (small icon with a clipboard and arrow) launches directly into the live setup page without needing to know the underlying navigation path.
 
+### Editing Project & Task Details (Updating Status)
+- In the project view (or from the project list), click the **Edit** button (or pencil icon).
+- Here, you can manage the project lifecycle:
+  - Change the overall **Status** (e.g., change from *Not Started* to **In Progress** when active work begins).
+  - Update **Assigned To**, **Target Completion Date**, or add project **Notes**.
+- Once the updates are made, click **Save and Close** to persist the changes.
 
 ---
 
@@ -163,6 +169,8 @@ Beyond organizing tasks, Implementation Projects are required for **Environment 
   - Revenue Management
 - [x] **Key Takeaway Learned:** Only offerings that are actively **enabled (opted-in)** at that time can be selected and populated inside the project.
 - [x] Clicked **Save and Open Project** to save selections and immediately open the structured task hierarchy workbench.
+- [x] Used **Edit** to modify project details, updated the Status to **In Progress**, and clicked **Save and Close**.
+
 
 ---
 
