@@ -86,12 +86,16 @@ A dialog/form will appear requesting the following key fields:
 
 | Field | Description | Example / Best Practice |
 | :--- | :--- | :--- |
-| **Name** | A clear, identifiable display name for the implementation project. | `XX_Financials_Core_Setup` |
-| **Code** | A unique system identifier (alphanumeric, no spaces). Often auto-populates from the Name or can be customized. | `XX_FIN_CORE_SETUP` |
-| **Description** | Context regarding what modules and business entities this project covers. | `Core Financials implementation covering General Ledger, Payables, and Cash Management.` |
-| **Assigned To** | The user responsible for overseeing the project (defaults to the currently logged-in user). | Current logged-in user / Implementation Lead |
-| **Start Date** | The official kick-off or configuration start date. | Current Date (e.g., `2026-10-12`) |
+| **Name** | A clear, identifiable display name for the implementation project (can be edited later). | `XX_Financials_Core_Setup` |
+| **Code** | A unique system identifier (alphanumeric, uppercase, no spaces). **Warning:** Once the project is created, the **Code is NOT editable**! | `XX_FIN_CORE_SETUP` |
+| **Description** | Context regarding what modules and business entities this project covers (editable). | `Core Financials implementation covering General Ledger, Payables, and Cash Management.` |
+| **Assigned To** | The user responsible for overseeing the project (defaults to current user, editable). | Current logged-in user / Implementation Lead |
+| **Start Date** | The official kick-off or configuration start date (editable). | Current Date (e.g., `2026-10-12`) |
 | **Open Date / Target Date** | (Optional) Timeline markers to help track implementation deadlines. | Scheduled Go-Live / Phase completion date |
+
+> [!CAUTION]
+> **Code Immutability Rule:** Choose your project **Code** carefully on day 1! Once you save the implementation project, the **Code field is permanently locked and non-editable**. Oracle uses this code as the master key for database tables and Configuration Packages.
+
 
 ### Step 3: Select Offerings and Options (The Selection Screen)
 
@@ -140,7 +144,8 @@ Once you click **Save and Open Project**, Oracle presents the full **Task Hierar
 - In the project view (or from the project list), click the **Edit** button (or pencil icon).
 - Here, you can manage the project lifecycle:
   - Change the overall **Status** (e.g., change from *Not Started* to **In Progress** when active work begins).
-  - Update **Assigned To**, **Target Completion Date**, or add project **Notes**.
+  - Update **Name**, **Description**, **Assigned To**, **Target Completion Date**, or add project **Notes**.
+  - **Important System Constraint:** The **Code** field is greyed out / read-only — **Code is NOT editable** once the project has been saved.
 - Once the updates are made, click **Save and Close** to persist the changes.
 
 ---
@@ -170,6 +175,8 @@ Beyond organizing tasks, Implementation Projects are required for **Environment 
 - [x] **Key Takeaway Learned:** Only offerings that are actively **enabled (opted-in)** at that time can be selected and populated inside the project.
 - [x] Clicked **Save and Open Project** to save selections and immediately open the structured task hierarchy workbench.
 - [x] Used **Edit** to modify project details, updated the Status to **In Progress**, and clicked **Save and Close**.
+- [x] **Discovered System Rule:** Verified that the **Code** field is strictly **not editable** after the project is created.
+
 
 
 ---
