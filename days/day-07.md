@@ -154,6 +154,24 @@ Below the project header, you will see two fundamental types of items in the hie
 > **As we selected the "Financials" offering, only Financials-related task lists and tasks are populated below.**  
 > Oracle intelligently builds this tailored tree so you don't have to sift through unrelated modules (like HR, Payroll, or Warehouse Management). Every single task required to bring Oracle Financials live is neatly arranged in recommended execution sequence.
 
+### Task Assignment to Users (Collaborative Implementation)
+
+One of the greatest operational powers of an Implementation Project is **work delegation**:
+
+1. **Assigning Tasks or Task Lists:**
+   - Select any individual **Task** (e.g., *Manage Primary Ledgers*) or an entire parent **Task List** folder (e.g., *Define Ledger*).
+   - Click the **Assign Tasks** action / button.
+   - You can search for and assign the task to **any user / consultant** registered in the Oracle instance.
+   - Set an optional **Due Date** to enforce project timelines.
+
+2. **Why This Matters for Consulting Teams:**
+   - **Role Specialization:** The Implementation Project Lead can split workloads across specialized consultants:
+     - Assign all General Ledger setup tasks to the **GL Consultant**.
+     - Assign all Payables setup tasks to the **AP Consultant**.
+     - Assign all Asset setup tasks to the **Fixed Assets Consultant**.
+   - **Personalized Work Area:** When assigned users log into Oracle and open *Manage Implementation Projects*, the dashboard automatically filters and surfaces the exact tasks assigned to their username.
+   - **Accountability & Tracking:** Each consultant independently updates their task status (*Not Started* $\rightarrow$ *In Progress* $\rightarrow$ *Completed*) and attaches notes, allowing project managers to monitor live % completion across the team.
+
 ### Editing Project & Task Details (Updating Status)
 - In the project view (or from the project list), click the **Edit** button (or pencil icon).
 - Here, you can manage the project lifecycle:
@@ -163,6 +181,7 @@ Below the project header, you will see two fundamental types of items in the hie
 - Once the updates are made, click **Save and Close** to persist the changes.
 
 ---
+
 
 
 ## 8. Why Implementation Projects Matter for Go-Live
@@ -192,6 +211,7 @@ Beyond organizing tasks, Implementation Projects are required for **Environment 
 - [x] Used **Edit** to modify project details, updated the Status to **In Progress**, and clicked **Save and Close**.
 - [x] **Discovered System Rule:** Verified that the **Code** field is strictly **not editable** after the project is created.
 - [x] Explored the generated hierarchy below the header: distinguished between **Task Lists** (folders grouping setups) and **Tasks** (actionable setup screens), observing that only Financials setups were populated based on our offering selection.
+- [x] **Delegation & Governance:** Understood how individual tasks and task lists can be assigned to **any user/consultant** with due dates and progress statuses.
 
 
 
