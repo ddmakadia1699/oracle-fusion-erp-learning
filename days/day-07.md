@@ -140,6 +140,20 @@ Once you click **Save and Open Project**, Oracle presents the full **Task Hierar
 - **Status & Progress Tracking:** Track execution status for each task (*Not Started*, *In Progress*, *Completed*), enter due dates, and view overall project % completion.
 - **Direct Navigation ("Go to Task"):** Clicking the **Go to Task** button (small icon with a clipboard and arrow) launches directly into the live setup page without needing to know the underlying navigation path.
 
+### Task Lists vs. Tasks: Understanding the Hierarchy
+
+Below the project header, you will see two fundamental types of items in the hierarchy:
+
+| Item Type | Icon | What It Is | Examples in Financials |
+| :--- | :---: | :--- | :--- |
+| **Task List** | 📁 *(Folder)* | A grouped container of related sub-task lists or tasks. It organizes setups logically by business phase. | • *Define Common Financials Configuration*<br>• *Define Ledger*<br>• *Define Invoicing and Payments*<br>• *Define Fixed Assets Configuration* |
+| **Task** | 📄 *(Notepad with Arrow)* | An individual, executable setup step. Clicking **Go to Task** opens the actual functional configuration page. | • *Manage Implementation Projects*<br>• *Manage Currencies*<br>• *Manage Accounting Calendars*<br>• *Manage Chart of Accounts Structures* |
+
+> [!TIP]
+> ### Dynamic Task Population
+> **As we selected the "Financials" offering, only Financials-related task lists and tasks are populated below.**  
+> Oracle intelligently builds this tailored tree so you don't have to sift through unrelated modules (like HR, Payroll, or Warehouse Management). Every single task required to bring Oracle Financials live is neatly arranged in recommended execution sequence.
+
 ### Editing Project & Task Details (Updating Status)
 - In the project view (or from the project list), click the **Edit** button (or pencil icon).
 - Here, you can manage the project lifecycle:
@@ -149,6 +163,7 @@ Once you click **Save and Open Project**, Oracle presents the full **Task Hierar
 - Once the updates are made, click **Save and Close** to persist the changes.
 
 ---
+
 
 ## 8. Why Implementation Projects Matter for Go-Live
 
@@ -176,6 +191,7 @@ Beyond organizing tasks, Implementation Projects are required for **Environment 
 - [x] Clicked **Save and Open Project** to save selections and immediately open the structured task hierarchy workbench.
 - [x] Used **Edit** to modify project details, updated the Status to **In Progress**, and clicked **Save and Close**.
 - [x] **Discovered System Rule:** Verified that the **Code** field is strictly **not editable** after the project is created.
+- [x] Explored the generated hierarchy below the header: distinguished between **Task Lists** (folders grouping setups) and **Tasks** (actionable setup screens), observing that only Financials setups were populated based on our offering selection.
 
 
 
